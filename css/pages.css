@@ -1,0 +1,207 @@
+/*****SOMMAIRE*****/
+/*1.REGISTER*******/
+/*2.ACCOUNT********/
+/*3.SNAPSHOT*******/
+/*4.GALLERY********/
+/*5.MEDIA QUERIES**/
+/******************/
+
+/**********/
+/*REGISTER*/
+/**********/
+
+#register-form{
+	text-align: center;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+/*********/
+/*ACCOUNT*/
+/*********/
+
+#modif-form{
+	text-align: center;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+.del-pic-icon{
+	width: 64px;
+	height: 64px;
+}
+
+/**********/
+/*SNAPSHOT*/
+/**********/
+
+#snapshot-video{
+	width: 640px;
+	height: 480px;
+	border: solid 2px black;
+
+}
+
+#snapshot-content{
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#snapshot-popup{
+	position : absolute;
+	display: none;
+	z-index: 20;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*********/
+/*GALLERY*/
+/********/
+
+#gallery-content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.gallery-block-icon{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	padding-top: 2px;
+	width: auto;
+}
+
+.gallery-like{
+	background-image: url("/img/icons/no-like.png");
+	background-size: contain;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: carringtonregular;
+	width: 64px;
+	height: 64px;
+}
+
+.gallery-like:hover{
+	background-image: url("/img/icons/act_like.png");
+	cursor: pointer;
+}
+
+.gallery-liked{
+	background-image: url("/img/icons/like.png");
+	background-size: contain;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: carringtonregular;
+	width: 64px;
+	height: 64px;
+}
+
+.gallery-liked:hover{
+	background-image: url("/img/icons/dislike.png");
+	cursor: pointer;
+}
+
+
+
+.gallery-comment{
+	width: 64px;
+	height: 64px;
+}
+
+.owner{
+	font-size: 2em;
+	font-family: Carrington;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #556080;
+	display: table-cell;
+	table-layout: auto;
+	vertical-align: middle;
+	text-align: center;
+	padding-left: 3px;
+	padding-right: 3px;
+	width: 100px;
+	height: 64px;
+}
+
+#nb_page{
+	font-family: carringtonregular;
+	text-align: right;
+}
+
+.gallery-pic{
+	border-radius: 15px 15px 15px 15px;
+	/*width: 320px;
+	height: 240px;*/
+	max-width: 100%;
+	height: auto;
+}
+
+.gallery-pic:hover{
+	cursor: pointer;
+}
+
+.gallery-content-pic{
+	justify-content: space-around;
+	display : flex;
+	flex-direction: column;
+	padding-bottom: 10px;
+	max-width: 40%;
+	min-width: 220px;
+}
+
+/*GALLERY-POPUP*/
+
+.gallery_popup_pic{
+		display: none;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 15;
+}
+
+.gallery-big-pic{
+	width: 640px;
+	height: 480px;
+}
+
+.gallery-comment-content{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	width: 630px;
+	max-height: 300px;
+	overflow: auto;
+	background-color: #556080;
+}
+
+.gallery-comment-popup{
+	width: auto;
+}
+
+.comment-login{
+
+}
+
+.form-comment{
+	width: 640px;
+}
+
+.form-comment-input{
+	width: 100%;
+}
+
+
+/***************/
+/*MEDIA QUERIES*/
+/***************/
+
+@media all and (max-width: 1024px){
+
+
+}
